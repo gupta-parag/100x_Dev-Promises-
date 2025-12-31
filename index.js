@@ -12,3 +12,7 @@ console.log('Hello - 1');
 setInterval(function () {
   console.log('Hello from Timeout_1');
 }, 1000);
+
+fs.readFile("b.txt", "utf-8", function(err,data){
+  console.log(data)
+})
