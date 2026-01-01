@@ -16,3 +16,8 @@ setInterval(function () {
 fs.readFile("b.txt", "utf-8", function(err,data){
   console.log(data)
 })
+
+
+fs.readFile("c.txt", "utf-8", function(err,data){
+  console.log(data)
+})
