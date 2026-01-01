@@ -10,7 +10,7 @@ function pgReturnFile(){
     return new Promise(function(resolve){
         
         console.log("Inside Promise")
-        fs.readFile("b.txt", "utf-8", function(err, data){
+        fs.readFile("data/b.txt", "utf-8", function(err, data){
             ID += 1;
             console.log(`I am from the number ${ID} callback`) ; 
             console.log("Before Resolve")

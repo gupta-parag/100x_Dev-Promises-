@@ -1,9 +1,9 @@
 // run `node index.js` in the terminal
-
-console.log(`Hello Node.js v${process.versions.node}!`);
 const fs = require('fs');
 
-fs.readFile('a.txt', 'utf-8', function (err, data) {
+console.log(`Hello Node.js v${process.versions.node}!`);
+
+fs.readFile('data/a.txt', 'utf-8', function (err, data) {
   console.log(data);
 });
 
@@ -13,10 +13,10 @@ setInterval(function () {
   console.log('Hello from Timeout_1');
 }, 1000);
 
-fs.readFile("b.txt", "utf-8", function(err,data){
+fs.readFile("data/b.txt", "utf-8", function(err,data){
   console.log(data)
 })
 
-fs.readFile("c.txt", "utf-8", function(err,data){
+fs.readFile("data/c.txt", "utf-8", function(err,data){
   console.log(data)
 })
